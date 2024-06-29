@@ -1,0 +1,178 @@
+:root{
+    --ff-jost: "Jost", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*NAV BAR*/
+header {
+    position: relative;
+    z-index: 1;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    padding: 10px 30px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.title img{
+    margin-top: 20px;
+    width: 300px;
+    height: 120px;
+    cursor: pointer;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 5px 30px 5px 40px;
+    font-size: 16px;
+    height: 30px;
+    border-radius: 6px;
+    width: 220px;
+    border: 2px solid #686D76;
+    border-color: #686D76;
+    background-image: url(/img/search.svg);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 20px 20px;
+    transition: border-color 0.3s;
+}
+
+.search-bar:focus {
+    border-color: #4caf50;
+    outline: none;
+    background-image: url(/img/sgreen.svg);
+    transition: background-image 0.3s;
+}
+
+.material-symbols-outlined {
+    pointer-events: none;
+    font-size: 40px;
+    margin-right: 5px;
+}
+
+.bar .material-symbols-outlined {
+    font-size: 30px;
+}
+
+.bar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.bar div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.bar a {
+    color: #686D76;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bar h5 {
+    font-size: 15px;
+    margin: 0;
+    font-family: "Jost";
+    color: #686D76;
+    cursor: pointer;
+}
+
+.home:hover .material-symbols-outlined,
+.garden:hover .material-symbols-outlined,
+.discovery:hover .material-symbols-outlined,
+.profile:hover .material-symbols-outlined {
+    color: #4caf50;
+}
+
+.home:hover h5,
+.garden:hover h5,
+.discovery:hover h5,
+.profile:hover h5 {
+    color: #4caf50;
+}
+
+.home:hover,
+.garden:hover,
+.discovery:hover,
+.profile:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/*FOOTER*/
+footer {
+    background-color: #4CAF50;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    height: 220px;
+}
+
+.a {
+    text-align: left;
+    margin-left: 140px;
+    margin-top: 30px;
+    flex: 1; 
+}
+
+.a h2,
+.a p {
+    margin: 5px 0;
+}
+
+.a, .b, .c {
+    display: inline-block;
+    margin-right: 80px;
+    vertical-align: top;
+}
+
+footer img {
+    width: 40px;
+    height: 40px;
+    display: inline;
+}
+
+footer li {
+    text-align: left;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
