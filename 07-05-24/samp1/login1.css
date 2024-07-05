@@ -1,0 +1,174 @@
+:root{
+    --ff-jost: "Jost", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: "Jost";
+}
+
+body{
+    background-image: url('https://github.com/kouyshi/capstone/blob/main/logo%202/Untitled6_20240622171445.png?raw=true');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container{
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 450px;
+    margin: 50px auto;
+}
+
+form{
+    margin: 0 2rem;
+}
+
+.form-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1.3rem;
+    margin-bottom: 0.4rem;
+}
+
+input{
+    color: inherit;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #278A5A;
+    padding-left: 1.5rem;
+    font-size: 15px;
+}
+
+.inputgroup{
+    padding: 1% 0;
+    position: relative;
+
+}
+
+.inputgroup i{
+    position: absolute;
+    color: black;
+}
+
+input:focus{
+    background-color: transparent;
+    outline: transparent;
+    border-bottom: 2px solid #278A5A;
+}
+
+input::placeholder{
+    color: transparent;
+}
+
+label{
+    color: black;
+    position: relative;
+    left: 1.2em;
+    top: -1.3em;
+    cursor: auto;
+    transition: 0.3s ease all;
+}
+
+input:focus~label,
+input:not(:placeholder-shown){
+    top: -3em;
+    color: black;
+    font-size: 15px;
+}
+
+.recover{
+    text-align: right;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.recover a{
+    text-decoration: none;
+    color: black;
+}
+
+.recover a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+.btn{
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    border-radius: 25px;
+    background-color: #34A56F;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    outline: none;
+}
+
+.btn:hover{
+    background-color: #278A5A;
+}
+
+.or{
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.icons{
+    text-align: center;
+}
+
+.icons i{
+    color: black;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 2px solid #278A5A;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+.icons i:hover{
+    background-color: #278A5A;
+    font-size: 1.6rem;
+    border: 2px solid #278A5A;
+}
+
+.links{
+    display: flex;
+    margin: auto;
+    padding: 0 4rem;
+    margin-top: 0.9rem;
+    font-weight: bold;
+    width: 500px;
+    font-size: 15px;
+}
+
+button{
+    color: black;
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 60px;
+}
+
+button:hover{
+    text-decoration: underline;
+    color: blue;
+}
