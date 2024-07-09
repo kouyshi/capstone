@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garden</title>
+    <link rel="stylesheet" href="css/garden.css">
+    <script src="/JS/garden.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+<body>
+    <header>
+        <div class="search-container">
+            <input type="text" placeholder="Search..." class="search-bar">
+        </div>
+        <div class="title">
+            <a href="dashboard.html"> <img src="https://raw.githubusercontent.com/kouyshi/capstone/748e52b836a4264996b105f2ce7e03738cc8168b/logo%202/1.svg" alt=""></a>
+        </div>
+        <!-- new -->
+        <div class="ACTIONS-HEADER"> 
+        <nav class="bar">
+            <div class="home">
+                <a href="dashboard.php"><span class="material-symbols-outlined">home</span>
+                <h5>Home</h5></a>
+            </div>
+            <div class="garden">
+                <a href="garden.html"><span class="material-symbols-outlined">psychiatry</span>
+                <h5>My Garden</h5></a>
+            </div>
+            <div class="discovery">
+                <a href="discover.html"><span class="material-symbols-outlined">menu_book</span>
+                <h5>Discovery</h5></a>
+            </div>
+            <div class="profile">
+                <a href="profile.html"><span class="material-symbols-outlined">person</span>
+                <h5>Profile</h5></a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="gardens">
+        <div class="radio-inputs">
+            <label class="radio">
+                <input type="radio" name="radio" checked onclick="toggleContent('planning')" />
+                <span class="name">Planning</span>
+            </label>
+            <label class="radio">
+                <input type="radio" name="radio" onclick="toggleContent('growing')" />
+                <span class="name">Growing</span>
+            </label>
+            <label class="radio">
+                <input type="radio" name="radio" onclick="toggleContent('reminder')" />
+                <span class="name">Reminder</span>
+            </label>
+        </div>
+
+    <!-- Weather -->
+        <div class="weather-widget">
+            <div id="location">Identifying location...</div>
+           <div class="datee"><div id="date"></div>
+        </div>
+        <div class="wead">
+            <div id="weather">
+            </div>
+                <img id="icon" src="" alt="Weather Icon">
+                <span id="temperature"></span>
+            </div>
+            <div id="description"></div>
+        </div>
+
+        <div class="card-container" id="planning">
+            
+            <div class="plantlist">
+                <a href="plantlist.php"><button>Add Plants?</button></a>
+            </div>
+
+            <div class="card">
+                <a href="info.php"><img src="img/tomato.webp" alt="Card Image"></a>
+                <h2>TOMATO</h2>
+                <button>GROWING</button>
+            </div>
+            <div class="card">
+                <img src="img/tomato.webp" alt="Card Image">
+                <h2>TOMATO</h2>
+                <button>GROWING</button>
+            </div>
+            <div class="card">
+                <img src="img/tomato.webp" alt="Card Image">
+                <h2>TOMATO</h2>
+                <button>GROWING</button>
+            </div>
+        </div>
+
+        
+        <div class="card-container" id="growing">
+
+            <div class="plantlist">
+                <a href="plantlist.html"><button>Add Plants?</button></a>
+            </div>
+
+            <div class="card-grow">
+                <a href=""><img src="img/tomato.webp" alt="tomato"></a>
+        <div class="content">
+            <h2>Bell Pepper</h2>
+            <p>Growth Stage: Seeding</p>
+        </div>
+                <div class="harvest">Harvest in 5 days</div>
+            </div>
+
+            <div class="card-grow">
+                <a href=""><img src="img/tomato.webp" alt="tomato"></a>
+        <div class="content">
+            <h2>Bell Pepper</h2>
+            <p>Growth Stage: Seeding</p>
+        </div>
+                <div class="harvest">Harvest in 5 days</div>
+            </div>
+
+            <div class="card-grow">
+                <a href=""><img src="img/tomato.webp" alt="tomato"></a>
+                <div class="content">
+                    <h2>Bell Pepper</h2>
+                    <p>Growth Stage: Seeding</p>
+                </div>
+                <div class="harvest">Harvest in 5 days</div>
+            </div>
+
+        </div>
+
+        <div class="card-container" id="reminder">
+
+            <div class="plantlist">
+                <a href="plantlist.html"><button>Add Plants?</button></a>
+            </div>
+
+            <div class="card-rem">
+                <a href=""><img src="img/tomato.webp" alt="tomato"></a>
+        <div class="content">
+            <h2>Bell Pepper</h2>
+            <p>Last: Jun 28</p>
+        </div>
+        <div class="checkbox-container">
+            <input type="checkbox" id="checkbox">
+        </div>
+            </div>
+            
+            <div class="card-rem">
+                <a href=""><img src="img/tomato.webp" alt="tomato"></a>
+        <div class="content">
+            <h2>Bell Pepper</h2>
+            <p>Last: Jun 28</p>
+        </div>
+        <div class="checkbox-container">
+            <input type="checkbox" id="checkbox">
+        </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="a">
+            <h2>SAMPLE</h2>
+            <p>Help you grow your plants and learn new things.</p>
+            <br>
+            <p>follow us on:</p>
+            <img src="img/fb.png" alt="">
+            <img src="img/twt.png" alt="">
+        </div>
+        <div class="b">
+            <h2>SITE LINKS</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">My Garden</a></li>
+                <li><a href="#">Discovery</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </div>
+        <div class="c">
+            <h2>Support</h2>
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <hr>
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleContent(contentId) {
+    var containers = document.querySelectorAll('.card-container');
+    containers.forEach(function(container) {
+        container.classList.toggle('active', container.id === contentId);
+    });
+}
+toggleContent('planning');
+    </script>
+
+</body>
+</html>
